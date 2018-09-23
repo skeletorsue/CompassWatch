@@ -1,10 +1,10 @@
 FROM ruby:latest
 MAINTAINER Chris Staley "skeletorsue@gmail.com"
 
-RUN gem update --system
-RUN gem install compass
-RUN gem install sass
-RUN gem install susy
+RUN gem update --system \
+ && gem install compass \
+ && gem install sass \
+ && gem install susy
 
 ENV LANG en_US.UTF-8  
 ENV LANGUAGE en_US:en  
